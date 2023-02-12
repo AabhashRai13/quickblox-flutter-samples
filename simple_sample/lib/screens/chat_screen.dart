@@ -10,7 +10,7 @@ import 'package:quickblox_sdk/models/qb_filter.dart';
 import 'package:quickblox_sdk/models/qb_message.dart';
 import 'package:quickblox_sdk/models/qb_sort.dart';
 import 'package:quickblox_sdk/quickblox_sdk.dart';
-import 'package:quickblox_sdk_example/credentials.dart';
+import 'package:quickblox_sdk_example/app/credentials.dart';
 import 'package:quickblox_sdk_example/utils/dialog_utils.dart';
 import 'package:quickblox_sdk_example/utils/snackbar_utils.dart';
 

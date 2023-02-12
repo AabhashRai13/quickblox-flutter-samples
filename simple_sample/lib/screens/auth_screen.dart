@@ -6,7 +6,7 @@ import 'package:quickblox_sdk/auth/module.dart';
 import 'package:quickblox_sdk/models/qb_session.dart';
 import 'package:quickblox_sdk/models/qb_user.dart';
 import 'package:quickblox_sdk/quickblox_sdk.dart';
-import 'package:quickblox_sdk_example/credentials.dart';
+import 'package:quickblox_sdk_example/app/credentials.dart';
 import 'package:quickblox_sdk_example/data_holder.dart';
 import 'package:quickblox_sdk_example/utils/dialog_utils.dart';
 import 'package:quickblox_sdk_example/utils/snackbar_utils.dart';

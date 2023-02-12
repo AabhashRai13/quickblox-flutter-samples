@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quickblox_sdk_example/credentials.dart';
+import 'package:quickblox_sdk_example/app/credentials.dart';
+import 'package:quickblox_sdk_example/app/di.dart';
 import 'package:quickblox_sdk_example/screens/auth_screen.dart';
 import 'package:quickblox_sdk_example/screens/chat_screen.dart';
 import 'package:quickblox_sdk_example/screens/conference_screen.dart';
@@ -9,9 +10,13 @@ import 'package:quickblox_sdk_example/screens/events_screen.dart';
 import 'package:quickblox_sdk_example/screens/settings_screen.dart';
 import 'package:quickblox_sdk_example/screens/subscriptions_screen.dart';
 import 'package:quickblox_sdk_example/screens/users_screen.dart';
-import 'package:quickblox_sdk_example/screens/webrtc_screen.dart';
+import 'package:quickblox_sdk_example/presentation/webrtc_screen.dart';
 
-void main() => runApp(App());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initAppModule();
+  runApp(App());
+}
 
 class App extends StatelessWidget {
   @override
@@ -39,12 +44,14 @@ class MainScreen extends StatelessWidget {
           _buildButton(context, 'Conference', ConferenceScreen()),
           Padding(
               padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
-              child: Text("USER LOGIN: $USER_LOGIN \n USER ID: $LOGGED_USER_ID", style: TextStyle(fontSize: 14)))
+              child: Text("USER LOGIN: $USER_LOGIN \n USER ID: $LOGGED_USER_ID",
+                  style: TextStyle(fontSize: 14)))
         ])));
   }
 
   PreferredSizeWidget _buildAppBar() {
-    return AppBar(title: const Text('Flutter Quickblox SDK'), centerTitle: true);
+    return AppBar(
+        title: const Text('Flutter Quickblox SDK'), centerTitle: true);
   }
 
   Widget _buildButton(BuildContext context, String title, Widget screen) {
@@ -53,6 +60,7 @@ class MainScreen extends StatelessWidget {
         child: Text(title),
         color: Theme.of(context).primaryColor,
         textColor: Colors.white,
-        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => screen)));
+        onPressed: () => Navigator.push(context,
+            MaterialPageRoute(builder: (BuildContext context) => screen)));
   }
 }

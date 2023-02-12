@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quickblox_sdk/models/qb_settings.dart';
 import 'package:quickblox_sdk/quickblox_sdk.dart';
-import 'package:quickblox_sdk_example/credentials.dart';
+import 'package:quickblox_sdk_example/app/credentials.dart';
 import 'package:quickblox_sdk_example/utils/dialog_utils.dart';
 import 'package:quickblox_sdk_example/utils/snackbar_utils.dart';
 
