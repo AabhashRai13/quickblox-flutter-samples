@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quickblox_sdk_example/app/credentials.dart';
 import 'package:quickblox_sdk_example/app/di.dart';
+import 'package:quickblox_sdk_example/features/webrtc/presentation/webrtc_screen.dart';
 import 'package:quickblox_sdk_example/screens/auth_screen.dart';
 import 'package:quickblox_sdk_example/screens/chat_screen.dart';
 import 'package:quickblox_sdk_example/screens/conference_screen.dart';
@@ -10,7 +11,6 @@ import 'package:quickblox_sdk_example/screens/events_screen.dart';
 import 'package:quickblox_sdk_example/screens/settings_screen.dart';
 import 'package:quickblox_sdk_example/screens/subscriptions_screen.dart';
 import 'package:quickblox_sdk_example/screens/users_screen.dart';
-import 'package:quickblox_sdk_example/presentation/webrtc_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

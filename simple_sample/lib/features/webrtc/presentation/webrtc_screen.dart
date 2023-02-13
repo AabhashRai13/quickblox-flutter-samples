@@ -10,8 +10,9 @@ import 'package:quickblox_sdk/webrtc/constants.dart';
 import 'package:quickblox_sdk/webrtc/rtc_video_view.dart';
 import 'package:quickblox_sdk_example/app/credentials.dart';
 import 'package:quickblox_sdk_example/app/di.dart';
-import 'package:quickblox_sdk_example/presentation/bloc/webrtc_bloc.dart';
-import 'package:quickblox_sdk_example/presentation/widgets/build_button.dart';
+import 'package:quickblox_sdk_example/features/webrtc/presentation/bloc/webrtc_bloc.dart';
+import 'package:quickblox_sdk_example/features/webrtc/presentation/widgets/build_button.dart';
+
 import 'package:quickblox_sdk_example/utils/dialog_utils.dart';
 import 'package:quickblox_sdk_example/utils/snackbar_utils.dart';
 
